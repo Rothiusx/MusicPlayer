@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:attr/selectableItemBackground"
+    android:longClickable="true"
+    android:onClick="songPicked"
+    android:orientation="horizontal"
+    android:persistentDrawingCache="none"
+    app:layout_optimizationLevel="none"
+    tools:context=".activity.MainActivity"
+    android:id="@+id/song_main">
+
+    <ImageView
+        android:id="@+id/album_cover_main"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/album" />
+
+    <LinearLayout
+        android:layout_width="252dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/song_title_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Title"
+            android:textColor="@color/textColor"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/song_artist_main"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="Artist"
+            android:textColor="@color/textColor"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/song_like_button_main"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:background="@drawable/star_disabled"
+        android:clickable="true"
+        android:onClick="addToFavorites" />
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/context_play"
+        android:title="Play" >
+    </item>
+
+    <item
+        android:id="@+id/context_favorite"
+        android:title="Add to Favorites" >
+    </item>
+
+    <item
+        android:id="@+id/context_search"
+        android:title="Search on Google" >
+    </item>
+
+    <item
+        android:id="@+id/context_watch"
+        android:title="Watch on YouTube" >
+    </item>
+
+</menu>

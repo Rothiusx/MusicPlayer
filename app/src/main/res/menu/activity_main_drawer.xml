@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_recently_played"
+            android:icon="@drawable/list"
+            android:title="Recently Played" />
+        <item
+            android:id="@+id/nav_favorite"
+            android:icon="@drawable/star"
+            android:title="Favorite Songs" />
+        <item
+            android:id="@+id/nav_playlists"
+            android:icon="@drawable/head"
+            android:title="Playlists" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/settings"
+            android:title="Settings" />
+    </group>
+
+    <item android:title="Account">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/login"
+                android:title="Login" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/add_user"
+                android:title="Sign Up" />
+        </menu>
+    </item>
+
+</menu>
